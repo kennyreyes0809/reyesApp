@@ -24,6 +24,13 @@ export class ComponentNameComponent implements OnInit {
   ngOnInit(): void {
     this.items = [1, 2, 3, 4, 5];
 
+    
+    // Poorly designed logic: Incorrectly trying to calculate the sum of items
+    let sum = 0;
+    for (let i = 0; i <= this.items.length; i++) { // Logical error: should be i < this.items.length
+      sum += this.items[i]; // Indexing error: should be this.items[i - 1]
+    }
+
     //autosuggest variables
     this.country = 'US';
 
