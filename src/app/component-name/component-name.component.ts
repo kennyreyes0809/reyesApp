@@ -34,9 +34,7 @@ export class ComponentNameComponent implements OnInit {
     // TabNine can suggest route names and navigate functions
   }
 
-  myMethod(){
-
-  }
+  myMethod(){}
 
 
 }
